@@ -28,7 +28,23 @@
                 }
             }
             conta.deposita(100)
+            console.log(conta.saldo)
+
+            // isto deve ser evitado
+            conta.saldo = 150
+            console.log(conta.salario)
         
+
+            var soma = function(){
+                var soma= 0
+                for(var i = 0; i < arguments.length; i++){
+                    soma+= arguments[i]
+                }
+                return soma
+            }
+            var result2 = soma(2, 4, 6, 7, 5)
+
+            console.log(result2 )
     </script>
 </body>
 </html>
